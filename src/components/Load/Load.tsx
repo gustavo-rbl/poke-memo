@@ -13,14 +13,13 @@ function Load({ toggleNewGame, difficulty }: LoadProps) {
   const [error, setError] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
   const [cards, setCards] = useState<
-    | {
-        id: string;
-        name: string;
-        img: string;
-        isShiny: boolean;
-        isClicked: boolean;
-      }[]
-    | null
+    {
+      id: string;
+      name: string;
+      img: string;
+      isShiny: boolean;
+      isClicked: boolean;
+    }[]
   >([]);
 
   useEffect(() => {
