@@ -3,7 +3,7 @@ import Rules from "../../components/Rules/Rules";
 
 function About() {
   return (
-    <>
+    <div className="fade--in">
       <h2>About</h2>
 
       <p>
@@ -27,7 +27,7 @@ function About() {
           Pokemon API
         </Link>
       </p>
-    </>
+    </div>
   );
 }
 

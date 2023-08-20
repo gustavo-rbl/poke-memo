@@ -1,10 +1,11 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
 
 function RootLayout() {
   return (
     <>
       <header>
-        <h1>
+        <h1 className="hero">
           <Link to="/">Poke Memo</Link>
         </h1>
 
@@ -20,6 +21,10 @@ function RootLayout() {
       <main>
         <Outlet />
       </main>
+
+      <footer className="footer">
+        <AudioPlayer />
+      </footer>
     </>
   );
 }
