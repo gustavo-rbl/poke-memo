@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.pri-nav {
+  justify-content: center;
+}
+
 /* loading */
 .loading {
   position: relative;
@@ -91,6 +95,11 @@
   padding: calc(var(--padding-pri) / 2) var(--padding-pri);
   position: relative;
   text-decoration: none;
+}
+
+.button--v02 {
+  margin: 0;
+  padding: 1px 5px;
 }
 
 /* icon */

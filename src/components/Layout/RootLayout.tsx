@@ -10,9 +10,17 @@ function RootLayout() {
         </h1>
 
         <nav>
-          <ul>
+          <ul className="pri-nav flex">
             <li>
-              <NavLink to="about">About</NavLink>
+              <NavLink to="/" className="button--v01 button--v02">
+                Home
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="about" className="button--v01 button--v02">
+                About
+              </NavLink>
             </li>
           </ul>
         </nav>
