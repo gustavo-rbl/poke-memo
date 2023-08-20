@@ -114,6 +114,15 @@
   width: 40px;
 }
 
+/* error img */
+.error--img {
+  background-color: var(--clr-gray-0);
+  border-radius: var(--brd-rad);
+  border: var(--brd-pri);
+  margin: 0 auto;
+  width: 90%;
+}
+
 /* misc */
 .cursor--pointer {
   cursor: pointer;
@@ -200,5 +209,9 @@
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .error--img {
+    width: 40%;
   }
 }

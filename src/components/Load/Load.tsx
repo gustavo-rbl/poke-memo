@@ -3,6 +3,7 @@ import GenerateIDSRecursive from "../../modules/GenerateIDSRecursive";
 import GetPokemon from "../../services/GetPokemon";
 import Loader from "../Loading/Loading";
 import PlayGame from "../PlayGame/PlayGame";
+import NotFound from "../../pages/NotFound/NotFound";
 
 type LoadProps = {
   toggleNewGame: () => void;
@@ -42,7 +43,8 @@ function Load({ toggleNewGame, difficulty }: LoadProps) {
   }, [difficulty]);
 
   if (loading) return <Loader />;
-  if (error) return <h2>Error...</h2>;
+
+  if (error) return <NotFound />;
 
   return <PlayGame cards={cards} toggleNewGame={toggleNewGame} />;
 }
